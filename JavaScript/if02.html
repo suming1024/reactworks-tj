@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IF조건문02</title>
+</head>
+<body>
+    <h2>짝수/홀수 판별</h2>
+    <div id="result"></div>
+    <button onclick="calculate()">판별하기</button>
+
+    <script>
+        console.log(typeof(num));
+        
+        function calculate(){
+            const demo=document.getElementById("result")//<- 결과값을 이 div에 넣어라
+            let num = parseInt(prompt("숫자를 입력하세요."));
+
+            if(num%2==0){
+                // console.log("짝수입니다.");
+                demo.innerHTML=`<b>${num}은 짝수입니다.`
+                    demo.style.color="blue";
+                // demo.textContent=`${num}은 짝수입니다.` - <b>가 안먹음 텍스트가 아니라서 그래
+            }else{
+                // console.log("홀수입니다.");
+                demo.innerHTML=`<b>${num}은 홀수입니다.`
+                    demo.style.color="red";
+                // demo.textContent=`${num}은 홀수입니다.`
+            }
+        }
+
+    </script>
+</body>
+</html>

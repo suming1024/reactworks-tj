@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수 예재</title>
+</head>
+<body>
+    <h2>반환값이 있는 함수 02</h2>
+    <div id="result01"></div>
+    <div id="result02"></div>
+
+    <script>
+
+        let result01 = document.getElementById("result01");
+        let result02 = document.getElementById("result02");
+
+        //이름없는 함수
+        let square = (x)=>{
+            return x * x;
+        }
+
+        let add = (x,y)=>{
+            return x + y;
+        }
+
+
+        //함수 호춣
+        for( let i=0; i<5; i++){
+            if(i<5) break;
+        };
+        let num = square(i);
+        result01.innerHTML = `결과값: ${num}`
+
+        let sum = add(10,5);
+        result02.innerHTML =`결과값: ${sum}`
+        
+    </script>
+
+</body>
+</html>

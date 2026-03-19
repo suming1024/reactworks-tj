@@ -1,0 +1,26 @@
+//구조 분해 할당
+let arr = [1,2]
+
+// arr[0] = 1
+// arr[1] = 2
+const[a,b] =arr;
+console.log(a,b);
+
+//객체 구조 분해 할당
+//자바 객체를 json 으로 변경 근데 제이슨이뭔데?
+// const product ={
+//     "prod_name": '믹히마우스';
+//     "price": 27000;
+    
+// }
+
+const product ={
+    prod_name: '무선마우스',
+    price: 27000
+
+}
+
+//구조 분해 할당
+const {prod_name, price} = product;
+console.log(`제품명: ${prod_name}`);
+console.log(`가격: ${price}`);
