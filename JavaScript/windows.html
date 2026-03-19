@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window 객채</title>
+</head>
+<body>
+    
+    <h2>window 객채</h2>
+
+    <script>
+
+        //1초마다 실행할거임
+        //콜백함수-함수의 매개인 함수 (앞에 window. 붙어도되고 생략도 가능)
+        setInterval(()=>{
+            console.log("1초마다 실행되는 코드");
+        },1000)
+
+        //3초 후에 알림을 띄우는 코드 (앞에 window. 붙어도되고 생략도 가능)
+        setTimeout(()=>{
+            alert("3초가 지났음");
+        },3000)
+
+    </script>
+
+</body>
+</html>

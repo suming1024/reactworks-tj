@@ -2,6 +2,7 @@ import './App.css'
 import picture from "./assets/hero.png" 
 import Example01 from './component/Example01'
 import Example02 from './component/Example02'
+import Event from './component/Event'
 
 //버튼 컴포넌트 만들기
 function MyBtn (){
@@ -32,8 +33,9 @@ function App() {
         width="200"
         /> */}
       </div>
-      <Example01/>
-      <Example02/>
+      {/* <Example01/> */}
+      {/* <Example02/> */}
+      <Event/>
       
 
       {/* <div>
